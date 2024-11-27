@@ -1,0 +1,32 @@
+import "./App.css"
+const App = () => {
+  const users = [
+    {id: 1, name: "ram", age: 50},
+    {id: 2, name: "venkat", age: 20},
+    {id: 3, name: "balaji", age: 99}
+  ]
+  return(
+    <div>
+      <h1>User Table</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          {users.map((user) => (
+            <tr>
+              <td>{user.name}</td>
+              <td>{user.age}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+    </div>
+  )
+}
+
+export default App

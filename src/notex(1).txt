@@ -1,0 +1,10 @@
+Map method------is a array method used to iterate over an array of elements 
+and it will retrun the new array.
+
+In react we are going to use map method -> dynamically we can the render the list of components
+
+array.map((currentvalue, index))
+
+let persons = ["ram", "siva", "john"];
+
+persons.map(person)
